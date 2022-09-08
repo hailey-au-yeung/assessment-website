@@ -18,18 +18,19 @@ body{
 
 /* header */
 header{
-    background-color:pink;
+    background-color:rgb(249, 197, 213);
     top:0%;
     left:0%;
     position:fixed;
     width:100%;
     height: 9vh;
     opacity:100%;
+    z-index:1;
 }
 h1{
     font-family: myFirstFont;
     font-size: 5vh;
-    color:rgb(109, 29, 29);
+    /* color:rgb(101, 51, 67); */
     position:fixed;
     text-align:center;
     top:0%;
@@ -45,11 +46,12 @@ h1{
 }
 /* navigation */
 nav{
-    background-color:#D16666;
+    background-color:rgb(249, 153, 183);
     position:fixed;
     top:9vh;
     width: 100%;
     height:6.75vh;
+    z-index:1;
 }
 nav ol{
     display: flex;
@@ -63,6 +65,7 @@ nav li{
 }
 nav a:hover{
     color: #f1f1f1;
+    background-color:rgb(242, 120, 159);
 }
 nav a{
     text-decoration: none;
@@ -71,10 +74,10 @@ nav a{
     font-size:large;
 }
 /* main */
-main{
-    padding:5px;
+ main{
+    padding:0;
 }
-.heading{
+ .heading{
     font-family:myFirstFont;
     text-align:center;
     padding:5px;
@@ -82,7 +85,7 @@ main{
     font-size:50px;
 }
 /* index title image */
-.container {
+ .container {
     position: relative;
     text-align: center;
     color: white;
@@ -110,14 +113,12 @@ main{
     border-radius: 10px;
     font-size:50px;
 }
-
-
 /* boxes in index&pattern */
 .boxes{
     display:flex;
 }
 .box1{
-    background-color:pink;
+    background-color:rgb(249, 197, 213);
     padding:5px;
     border-radius:10px;
     width:31.25%;
@@ -125,14 +126,14 @@ main{
     margin-left:1%;
 }
 .box2{
-    background-color:pink;
+    background-color:rgb(249, 197, 213);
     padding:5px;
     border-radius:10px;
     width:31.25%;
     margin:0% 0.5%;
 }
 .box3{
-    background-color:pink;
+    background-color:rgb(249, 197, 213);
     padding:5px;
     border-radius:10px;
     width:31.25%;
@@ -155,7 +156,62 @@ main{
 .arrow:hover{
 transform: translate(0%);
 }
+/* products formatting */
+.osidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 15.75vh;
+    left: 0;
+    background-color: rgb(254, 227, 236);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .osidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family:myFirstFont;
+    color: black;
+    display: block;
+  }
+/* boxes in products */
+.obox1{
+    border:1px solid grey;
+    padding:5px;
+    border-radius:10px;
+    width:25%;
+    
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.obox2{
+    border:1px solid grey;
+    padding:5px;
+    border-radius:10px;
+    width:25%;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.obox3{
+    border:1px solid grey;
+    padding:5px;
+    border-radius:10px;
+    width:25%;
+    margin-top:5px;
+    margin-bottom: 5px;
 
+}
+/* index text */
+.irandomtext{
+    font-family:myFirstFont;
+    padding:5px;
+    background-color:rgb(249, 153, 183);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+/* general text */
 .randomtext{
     font-family:myFirstFont;
     padding:5px;
@@ -168,7 +224,7 @@ transform: translate(0%);
     z-index: 1;
     top: 15.75vh;
     left: 0;
-    background-color: rgba(255, 192, 203, 0.894);
+    background-color: rgb(254, 227, 236);
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -184,23 +240,33 @@ transform: translate(0%);
   
   .sidenav a:hover {
     color: #f1f1f1;
-    background-color:magenta;
+    background-color:rgb(249, 153, 183);
   }
  /* general formatting for sidenav pages  */
-  .pages {
+ /* howto, whale and bee page formatting  */
+ .pages {
     margin-left: 160px;
     padding: 20.75vh 90px;
     font-family:myFirstFont;
 }
+/* pattern page formatting */
 .pageh {
     margin-left: 160px;
     padding-top: 16.5vh;
     font-family:myFirstFont;
 }
+/* products page formatting */
+.pageo {
+    margin-left: 220px;
+    padding-top: 16.5vh;
+    font-family:myFirstFont;
+}
+/* community page formatting */
 .pageg{
     margin-top:16.75vh;
     margin-left:160px;
     margin-right:160px;
+    margin-bottom:10px;
     padding:0px 5px 5px 5px;
     color:rgb(67, 67, 67);
 }
@@ -210,13 +276,13 @@ transform: translate(0%);
     width:100%;
   }
   .meanings td, th {
-    border: 1px solid rgba(255, 192, 203, 0.705);
+    border: 1px solid rgb(249, 197, 213, 0.792);
     text-align: left;
     padding: 8px;
     width:50%;
   }
   .meanings tr:nth-child(even) {
-    background-color: rgba(255, 192, 203, 0.705);
+    background-color: rgb(249, 197, 213, 0.792);
   }
   
   /* some colours: rgba(255, 192, 203, 0.705) #dddddd */
@@ -250,6 +316,7 @@ transform: translate(0%);
    .patternimg{
     height:250px;
     float:right;
+    padding:5px 5px 20px 5px;
    }
    .headhr hr{
     width:61%;
@@ -264,7 +331,7 @@ transform: translate(0%);
     width:100%;
 }
 footer{
-    background-color:pink;
+    background-color:rgb(249, 197, 213);
     color:black;
     font-family: myFirstFont;
     font-size:large;
@@ -282,7 +349,7 @@ footer li{
     padding:5px;
 }
 footer a:hover{
-    background-color: pink;
+    background-color: rgb(238, 105, 131);
 }
 footer a{
     text-decoration: none;
