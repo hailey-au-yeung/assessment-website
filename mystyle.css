@@ -198,9 +198,10 @@ transform: translate(0%);
     font-family:myFirstFont;
 }
 .pageg{
+    margin-top:16.75vh;
     margin-left:160px;
     margin-right:160px;
-    padding:16.75vh 5px 5px 5px;
+    padding:0px 5px 5px 5px;
     color:rgb(67, 67, 67);
 }
   /* how-to table formatting */
