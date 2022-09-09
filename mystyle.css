@@ -116,6 +116,7 @@ nav a{
 /* boxes in index&pattern */
 .boxes{
     display:flex;
+
 }
 .box1{
     background-color:rgb(249, 197, 213);
@@ -181,26 +182,41 @@ transform: translate(0%);
     border:1px solid grey;
     padding:5px;
     border-radius:10px;
-    width:25%;
-    
-    margin-top:5px;
-    margin-bottom: 5px;
+    width:21%;
+    margin-left:15px;
+    margin-right:20px;
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 .obox2{
     border:1px solid grey;
     padding:5px;
     border-radius:10px;
-    width:25%;
-    margin-top:5px;
-    margin-bottom: 5px;
+    width:21%;
+    margin-left:10px;
+    margin-right:20px;
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 .obox3{
     border:1px solid grey;
     padding:5px;
     border-radius:10px;
-    width:25%;
-    margin-top:5px;
-    margin-bottom: 5px;
+    width:21%;
+    margin-left:10px;
+    margin-right:20px;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.obox4{
+    border:1px solid grey;
+    padding:5px;
+    border-radius:10px;
+    width:21%;
+    margin-left:10px;
+    margin-right:20px;
+    margin-top:15px;
+    margin-bottom: 15px;
 
 }
 /* index text */
@@ -302,7 +318,7 @@ transform: translate(0%);
    tbody>tr>:nth-child(3){
     width:40%;
    }
-   /* pattern instruction formats */
+   /* pattern/whale/bee instruction formats */
    .instructions{
     padding:12px;
    }
@@ -314,12 +330,12 @@ transform: translate(0%);
     margin-bottom:0;
    }
    .patternimg{
-    height:250px;
+    width:36%;
     float:right;
     padding:5px 5px 20px 5px;
    }
    .headhr hr{
-    width:61%;
+    width:60%;
     text-align:left;
     margin-left:0
    }
