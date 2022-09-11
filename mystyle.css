@@ -190,8 +190,8 @@ color:#F2789F;
     padding:5px;
     border-radius:10px;
     width:21%;
-    margin-left:15px;
-    margin-right:20px;
+    margin-left:4%;
+    margin-right:4%px;
     margin-top:15px;
     margin-bottom: 15px;
 }
@@ -200,8 +200,7 @@ color:#F2789F;
     padding:5px;
     border-radius:10px;
     width:21%;
-    margin-left:10px;
-    margin-right:20px;
+    margin-left:4%;
     margin-top:15px;
     margin-bottom: 15px;
 }
@@ -210,8 +209,8 @@ color:#F2789F;
     padding:5px;
     border-radius:10px;
     width:21%;
-    margin-left:10px;
-    margin-right:20px;
+    margin-left:4%;
+    margin-right:4%;
     margin-top:15px;
     margin-bottom: 15px;
 }
@@ -220,8 +219,7 @@ color:#F2789F;
     padding:5px;
     border-radius:10px;
     width:21%;
-    margin-left:10px;
-    margin-right:20px;
+    margin-right:4%;
     margin-top:15px;
     margin-bottom: 15px;
 
@@ -489,4 +487,11 @@ iframe{
 .pageg ul{
   padding-top:0;
   padding-bottom:0;
+}
+.aimg{
+  width:90%;
+}
+.aimgcontainer{
+  display:flex;
+  justify-content:space-around;
 }
