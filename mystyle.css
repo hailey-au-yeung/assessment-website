@@ -8,11 +8,15 @@ body{
 }
 @font-face {
     font-family: myFirstFont;
+    src: url(fonts/IndieFlower-Regular.ttf);
+  }
+@font-face {
+    font-family: GochiHand;
     src: url(fonts/GochiHand-Regular.ttf);
   }
 .heads{
     color:black;
-    font-family: myFirstFont;
+    font-family: GochiHand;
     font-size:50px;
 }
 
@@ -26,8 +30,9 @@ header{
     height: 9vh;
     opacity:100%;
     z-index:1;
+    display:flex;
 }
-h1{
+header a h1{
     font-family: myFirstFont;
     font-size: 5vh;
     /* color:rgb(101, 51, 67); */
@@ -38,11 +43,15 @@ h1{
     transform: translate(-35%);
     margin:0;
     padding:2vh;
+    text-decoration:none;
+    color:black;
+    font-family:GochiHand;
 }
+
 .headerimg{
-    height: 5vh;
+    height: 8vh;
     margin:0;
-    padding:1.5vh;
+    padding:1.25vh;
 }
 /* navigation */
 nav{
@@ -56,12 +65,11 @@ nav{
 nav ol{
     display: flex;
     justify-content: space-around;
-    padding:14px;
+    padding: 7px;
     margin:0;
 }
 nav li{
     list-style: none;
-    padding:5pxl
 }
 nav a:hover{
     color: #f1f1f1;
@@ -72,13 +80,16 @@ nav a{
     color:black;
     font-family: myFirstFont;
     font-size:large;
+    padding:2px;
+    border-radius:5px;
 }
 /* main */
  main{
     padding:0;
+    font-family:myFirstFont;
 }
  .heading{
-    font-family:myFirstFont;
+    font-family:GochiHand;
     text-align:center;
     padding:5px;
     border-radius: 10px;
@@ -98,6 +109,8 @@ nav a{
     transform: translate(-50%, -50%);
     font-family: myFirstFont;
     font-size:50px;
+    font-family:GochiHand;
+
  }  
  .ct{
     font-size: 100px;
@@ -107,7 +120,7 @@ nav a{
     width:100%;
 }
 .welcome{
-    font-family:myFirstFont;
+    font-family:GochiHand;
     text-align:center;
     padding:5px;
     border-radius: 10px;
@@ -116,7 +129,6 @@ nav a{
 /* boxes in index&pattern */
 .boxes{
     display:flex;
-
 }
 .box1{
     background-color:rgb(249, 197, 213);
@@ -146,39 +158,34 @@ nav a{
     border-radius:10px;
 }
 .arrow{
-    text-align:right;  
-    font-size:medium;
-    transform: translate(-2%);
+    text-align:center;  
+    font-size:x-large;
+    background-color:rgb(249, 153, 183);
+    width:30%;
+    margin-left:35%;   
+    text-decoration:bold; 
 }
 .arrow a{
     text-decoration:none;
-    color:black;
+    color:white;
 }
 .arrow:hover{
-transform: translate(0%);
+color:#F2789F;
 }
-/* products formatting */
-.osidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 15.75vh;
-    left: 0;
-    background-color: rgb(254, 227, 236);
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  .osidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
+/* products page formatting */
+.products{
+    background-color:rgb(254, 227, 236);
+}
+.pageo {
+    margin-left: 160px;
+    margin-right:160px;
+    padding: 16.5vh 10px 10px 10px;
     font-family:myFirstFont;
-    color: black;
-    display: block;
-  }
-/* boxes in products */
-.obox1{
+    background-color:white;
+}
+  /* boxes in products */
+
+  .obox1{
     border:1px solid grey;
     padding:5px;
     border-radius:10px;
@@ -271,12 +278,7 @@ transform: translate(0%);
     padding-top: 16.5vh;
     font-family:myFirstFont;
 }
-/* products page formatting */
-.pageo {
-    margin-left: 220px;
-    padding-top: 16.5vh;
-    font-family:myFirstFont;
-}
+
 /* community page formatting */
 .pageg{
     margin-top:16.75vh;
@@ -284,7 +286,7 @@ transform: translate(0%);
     margin-right:160px;
     margin-bottom:10px;
     padding:0px 5px 5px 5px;
-    color:rgb(67, 67, 67);
+    color:rgb(85, 85, 85);
 }
   /* how-to table formatting */
   .meanings table {
@@ -339,6 +341,102 @@ transform: translate(0%);
     text-align:left;
     margin-left:0
    }
+   /* feature page formatting */
+   .pagee{
+    margin-top:16.75vh;
+    margin-bottom:10px;
+}
+   /* slideshow formatting */
+   * {box-sizing: border-box}
+   body {font-family: Verdana, sans-serif; margin:0}
+   .mySlides {display: none}
+   img {vertical-align: middle;}
+   
+   /* Slideshow container */
+   .slideshow-container {
+     width:100%;
+     position: relative;
+     margin: auto;
+   }
+   
+   /* Next & previous buttons */
+   .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+   }
+   
+   /* Position the "next button" to the right */
+   .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+   }
+   
+   /* On hover, add a black background color with a little bit see-through */
+   .prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+   }
+   
+   /* Caption text */
+   .text {
+     color: #f2f2f2;
+     font-size: 25px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 60.5px;
+     width: 100%;
+     text-align: center;
+     background-color:rgba(0, 0, 0, 0.325);
+   }
+   .text1{
+    color: #f2f2f2;
+     font-size: 25px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+     background-color:rgba(0, 0, 0, 0.325);
+
+   }
+   
+   /* The dots/bullets/indicators */
+   .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+   }
+   
+   .active, .dot:hover {
+     background-color: #717171;
+   }
+   
+   /* Fading animation */
+   .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+   }
+   
+   @keyframes fade {
+     from {opacity: .4} 
+     to {opacity: 1}
+   }
+   
+
  /* footer formats */
 .pagef {
     font-family:myFirstFont;
@@ -386,4 +484,9 @@ iframe{
     width:100%;
     height:400px;
     border:0;
+}
+/* about us page formatting  */
+.pageg ul{
+  padding-top:0;
+  padding-bottom:0;
 }

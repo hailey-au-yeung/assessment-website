@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Today</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>  
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img  class="headerimg" src="images/crochet logo madebyjalene.png" alt="logo">
+        </a>        
+        <a href="index.html"><h1>CROCHET TODAY</h1></a>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="pattern.html">Patterns</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="feature.html">Featured</a></li>
+        </ol>        
+    </nav>
+    <main>
+        <div class="pagee">
+            <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="images/girl.png" style="width:100%">
+                <div class="text1">Well done Maisie on completing last month's challenge! Your octopus plushie looks amazing!</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="images/tanja.png" style="width:100%; height:575px">
+                <div class="text">We congratulate Tanja on starting her business! Her clothes look gorgeous, we send Tanja our best wishes.</div>
+                <div class="text1">To support her go to: <a href="https://tanjascrochet.com/">https://tanjascrochet.com/</a></div>
+            </div>          
+            
+            <div class="mySlides fade">
+                <img src="images/penguin].png" style="width:100%">
+                <div class="text">Challenge for this month: make these cute penguins by following this youtube tutorial!</div>
+                <div class="text1"><a href="https://www.youtube.com/watch?v=jtH25R-h9uQ">https://www.youtube.com/watch?v=jtH25R-h9uQ</a></div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+            </script>
+        </div>
+    </main>
+</body>
+</html>
